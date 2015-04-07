@@ -5,20 +5,21 @@
 import java.sql.*;
 
 public class SqlConnector {
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/test";
+    static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
+    static final String DB_URL = "jdbc:oracle:thin:@ora.csc.ncsu.edu:1521:orcl";
 
-    static final String USER = "test";
-    static final String PASS = "1234";
+    static final String USER = "njiang4";
+    static final String PASS = "200066299";
 
-    Connection conn = null;
-    Statement stmt = null;
+    private Connection conn = null;
+    private Statement stmt = null;
 
     public SqlConnector(){
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName(JDBC_DRIVER);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = conn.createStatement();
+
         } catch (SQLException se) {
             se.printStackTrace();
         } catch (Exception e) {

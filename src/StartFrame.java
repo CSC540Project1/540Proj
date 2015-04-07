@@ -2,6 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Arrays;
 
 /**
  * Created by neil on 15/3/28.
@@ -14,21 +17,28 @@ public class StartFrame extends JFrame {
     private static int START_WIDTH = 400;
     private static int START_HEIGHT = 400;
 
+    private JPanel cards;
+    CardLayout cardLayout;
+
     public StartFrame(String title) {
         super(title);
-
         setSize(START_WIDTH, START_HEIGHT);
+
         StartPanel startPanel = new StartPanel();
-        startPanel.setLayout(new BoxLayout(startPanel, BoxLayout.Y_AXIS));
+        LoginPanel loginPanel = new LoginPanel();
 
+        cards = new JPanel(new CardLayout());
+        cards.add(startPanel, "startPanel");
+        cards.add(loginPanel, "loginPanel");
+        cardLayout = (CardLayout) cards.getLayout();
 
-        add(startPanel);
-        //pack();
+        getContentPane().add(cards);
         setVisible(true);
+
     }
 
-    private class StartPanel extends JPanel {
 
+    public class StartPanel extends JPanel {
         private JButton stuLogin;
         private JButton adminLogin;
         private JButton guestLogin;
@@ -45,16 +55,16 @@ public class StartFrame extends JFrame {
             guestLogin.setAlignmentX(Component.CENTER_ALIGNMENT);
             exit.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-            add(stuLogin);
-            add(adminLogin);
-            add(guestLogin);
-            add(exit);
-
             addActionToButton(stuLogin);
             addActionToButton(adminLogin);
             addActionToButton(guestLogin);
 
-            //exit the program
+            this.add(stuLogin);
+            this.add(adminLogin);
+            this.add(guestLogin);
+            this.add(exit);
+            this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+
             exit.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -63,20 +73,98 @@ public class StartFrame extends JFrame {
             });
         }
 
-        //redirect to the username and password input panel
         private void addActionToButton(JButton button) {
             button.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    StartPanel.this.setVisible(false);
-                    LoginPanel loginPanel = new LoginPanel();
-                    StartFrame.this.add(loginPanel);
-                    loginPanel.setVisible(true);
+                    cardLayout.show(cards, "loginPanel");
                 }
             });
         }
+
+
+
     }
 
+    public class LoginPanel extends JPanel {
+        private JLabel nameLabel;
+        private JLabel pwdLabel;
+        private final JTextField nameField;
+        private final JPasswordField pwdField;
+        private JButton loginButton;
+        private JButton cancelButton;
+
+        public LoginPanel() {
+            nameLabel = new JLabel("Name");
+            pwdLabel = new JLabel("Password");
+
+            nameField = new JTextField(32);
+            pwdField = new JPasswordField(32);
+
+            loginButton = new JButton("Login");
+            cancelButton = new JButton("Cancel");
+
+            this.add(nameLabel);
+            this.add(nameField);
+            this.add(pwdLabel);
+            this.add(pwdField);
+            this.add(loginButton);
+            this.add(cancelButton);
+            //this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+
+            cancelButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    cardLayout.show(cards, "startPanel");
+                }
+            });
+
+            loginButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    String userid = nameField.getText();
+                    char[] password = pwdField.getPassword();
+
+                    //for test
+                    System.out.println(userid.toCharArray());
+                    System.out.println(password);
+
+                    SqlConnector matchUser = new SqlConnector();
+                    String sql = "select * from Student_Auth";
+                    try {
+                        ResultSet rs = matchUser.getStmt().executeQuery(sql);
+
+                        while (rs.next()) {
+                            String uname = rs.getString("USERNAME").trim();
+                            //for test
+                            System.out.println(uname + "$$$$$");
+                            String pwd = rs.getString("PASSWORD").trim();
+                            //for test
+                            System.out.println(pwd + "$$$$$");
+
+                            //----------------------------------------------------------------------
+                            //the following comparison needs to romove the blanks following the data
+                            //----------------------------------------------------------------------
+                            if (uname.equals(userid) && Arrays.equals(password, pwd.toCharArray())){
+                                System.out.println("Verified!");
+                                StartFrame.this.setVisible(false);
+                                StudentFrame studentFrame = new StudentFrame("Student");
+                                studentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                                studentFrame.setVisible(true);
+
+                            }
+                        }
+                        matchUser.getConn().close();
+
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            });
+            
+
+        }
+    }
 
 }
 

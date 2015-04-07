@@ -32,43 +32,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StudentFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <file leaf-file-name="SqlConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LoginPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#823#1973#0" expanded="true" />
-                <element signature="e#1972#1973#0" expanded="true" />
-                <marker date="1428255595000" expanded="true" signature="1064:1088" placeholder="select fName..Person..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StartFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54545456">
-              <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
               <folding>
-                <element signature="e#1579#1756#0" expanded="true" />
-                <element signature="e#1755#1756#0" expanded="true" />
-                <element signature="e#1924#2284#0" expanded="true" />
-                <element signature="e#2283#2284#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentFrame.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.15756303">
+              <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4435#4674#0" expanded="true" />
+                <element signature="e#4673#4674#0" expanded="true" />
+                <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -95,14 +109,16 @@
         <option value="$PROJECT_DIR$/src/DetailListener.java" />
         <option value="$PROJECT_DIR$/src/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/DetailEvent.java" />
-        <option value="$PROJECT_DIR$/src/SqlConnector.java" />
         <option value="$PROJECT_DIR$/src/CreateNewFrame.java" />
         <option value="$PROJECT_DIR$/src/DetailPanel.java" />
-        <option value="$PROJECT_DIR$/src/LoginFrame.java" />
-        <option value="$PROJECT_DIR$/src/StudentFrame.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/StartPanel.java" />
         <option value="$PROJECT_DIR$/src/LoginPanel.java" />
+        <option value="$PROJECT_DIR$/src/LoginFrame.java" />
+        <option value="$PROJECT_DIR$/backupFiles/LoginFrame.java" />
+        <option value="$PROJECT_DIR$/src/SqlConnector.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/StartFrame.java" />
+        <option value="$PROJECT_DIR$/src/StudentFrame.java" />
       </list>
     </option>
   </component>
@@ -117,9 +133,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
     <option name="y" value="23" />
-    <option name="width" value="1395" />
+    <option name="width" value="1396" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -150,7 +165,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,6 +173,28 @@
               <option name="myItemId" value="540Proj" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ojdbc6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ojdbc6.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="540Proj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -182,10 +219,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudentFrame.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -197,14 +230,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="backupFiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,10 +256,18 @@
     <property name="dynamic.classpath" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DB_connectors/mysql-connector-java-5.1.35/mysql-connector-java-5.1.35-bin.jar" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DB_connectors/oracle/ojdbc6.jar!/" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backupFiles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backupFiles" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -437,12 +478,16 @@
       <workItem from="1427762367345" duration="17732000" />
       <workItem from="1428012178149" duration="4818000" />
       <workItem from="1428106321434" duration="15279000" />
-      <workItem from="1428250472224" duration="6811000" />
+      <workItem from="1428250472224" duration="16243000" />
+      <workItem from="1428269259903" duration="15271000" />
+      <workItem from="1428361045159" duration="3276000" />
+      <workItem from="1428393647161" duration="1010000" />
+      <workItem from="1428397148564" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52068000" />
+    <option name="totallyTimeSpent" value="81657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,34 +499,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1395" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1396" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26877472" sideWeight="0.50554323" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2674572" sideWeight="0.49445677" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24759793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33596838" sideWeight="0.49445677" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24741507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981523" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3992095" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39789197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325887" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -497,7 +542,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -506,29 +551,212 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupFiles/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPanel.java">
+    <entry file="file://$PROJECT_DIR$/backupFiles/LoginFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#1973#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <marker date="1428255595000" expanded="true" signature="1064:1088" placeholder="select fName..Person..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -538,6 +766,17 @@
           <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -546,11 +785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -559,24 +794,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPanel.java">
+    <entry file="file://$PROJECT_DIR$/backupFiles/LoginFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="0" selection-start-line="23" selection-start-column="8" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#1973#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <marker date="1428255595000" expanded="true" signature="1064:1088" placeholder="select fName..Person..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,10 +818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -605,6 +828,17 @@
           <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -613,11 +847,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,24 +856,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPanel.java">
+    <entry file="file://$PROJECT_DIR$/backupFiles/LoginFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#1973#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <marker date="1428255595000" expanded="true" signature="1064:1088" placeholder="select fName..Person..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -651,10 +873,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,6 +883,17 @@
           <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,11 +902,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,11 +910,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,10 +919,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
@@ -709,11 +929,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,10 +938,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
@@ -734,11 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -747,10 +957,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
           </folding>
         </state>
       </provider>
@@ -759,11 +967,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,17 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5745554">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,54 +989,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38519925">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+    <entry file="file://$PROJECT_DIR$/backupFiles/StartFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backupFiles/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2867132">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22727273">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#469#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#1973#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <marker date="1428255595000" expanded="true" signature="1064:1088" placeholder="select fName..Person..." />
-          </folding>
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54545456">
-          <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
           <folding>
-            <element signature="e#1579#1756#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1924#2284#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1428394098000" expanded="true" signature="4060:4086" placeholder="select USERN..Student_Auth..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15756303">
+          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4435#4674#0" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#MaintPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -912,7 +1118,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mysql-connector-java-5.1.35-bin</last-edited>
+          <last-edited>ojdbc6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
