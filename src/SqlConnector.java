@@ -8,8 +8,8 @@ public class SqlConnector {
     static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
     static final String DB_URL = "jdbc:oracle:thin:@ora.csc.ncsu.edu:1521:orcl";
 
-    static final String USER = "njiang4";
-    static final String PASS = "200066299";
+    static final String USER = "vkshah";
+    static final String PASS = "200053772";
 
     private Connection conn = null;
     private Statement stmt = null;

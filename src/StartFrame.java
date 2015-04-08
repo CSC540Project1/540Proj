@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Arrays;
@@ -94,6 +95,7 @@ public class StartFrame extends JFrame {
         private JButton loginButton;
         private JButton cancelButton;
 
+
         public LoginPanel() {
             nameLabel = new JLabel("Name");
             pwdLabel = new JLabel("Password");
@@ -122,22 +124,31 @@ public class StartFrame extends JFrame {
             loginButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    String userid = nameField.getText();
-                    char[] password = pwdField.getPassword();
+                    String username;
+                    char[] password;
+                    username = nameField.getText();
+                    password = pwdField.getPassword();
 
                     //for test
-                    System.out.println(userid.toCharArray());
+                    System.out.println(username.toCharArray());
                     System.out.println(password);
 
                     SqlConnector matchUser = new SqlConnector();
+
                     String sql = "select * from Student_Auth";
                     try {
+
                         ResultSet rs = matchUser.getStmt().executeQuery(sql);
 
                         while (rs.next()) {
                             String uname = rs.getString("USERNAME").trim();
                             //for test
                             System.out.println(uname + "$$$$$");
+
+                            String userid = rs.getString("ID").trim();
+                            //for test
+                            System.out.println(userid + "$$$$$");
+
                             String pwd = rs.getString("PASSWORD").trim();
                             //for test
                             System.out.println(pwd + "$$$$$");
@@ -145,10 +156,11 @@ public class StartFrame extends JFrame {
                             //----------------------------------------------------------------------
                             //the following comparison needs to romove the blanks following the data
                             //----------------------------------------------------------------------
-                            if (uname.equals(userid) && Arrays.equals(password, pwd.toCharArray())){
+                            if (uname.equals(username) && Arrays.equals(password, pwd.toCharArray())){
                                 System.out.println("Verified!");
                                 StartFrame.this.setVisible(false);
-                                StudentFrame studentFrame = new StudentFrame("Student");
+                                StudentFrame studentFrame = new StudentFrame("Student", userid);
+                                System.out.println("The Student ID is: " + userid);
                                 studentFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                                 studentFrame.setVisible(true);
 
@@ -164,6 +176,7 @@ public class StartFrame extends JFrame {
             
 
         }
+
     }
 
 }

@@ -1,20 +1,27 @@
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by neil on 15/3/31.
  */
 public class StudentFrame extends JFrame {
-    private static int STUDENT_WIDTH = 400;
-    private static int STUDENT_HEIGHT = 400;
+    private static int STUDENT_WIDTH = 600;
+    private static int STUDENT_HEIGHT = 600;
 
     private JPanel stuCards;
 
     CardLayout stuCardLayout;
 
-    public StudentFrame(String title) {
+    public StudentFrame(String title, String userid) {
         super(title);
         this.setSize(STUDENT_WIDTH, STUDENT_HEIGHT);
 
@@ -35,16 +42,24 @@ public class StudentFrame extends JFrame {
 
 
         //Under the Housing Option Panel
-        ViewInvoicesPanel viewInvoicesPanel = new ViewInvoicesPanel();
+        ViewInvoicesPanel viewInvoicesPanel = new ViewInvoicesPanel(userid);
         ViewLeasesPanel viewLeasesPanel = new ViewLeasesPanel();
         NewRequestPanel newRequestPanel = new NewRequestPanel();
+        NLeaReqPanel nLeaReqPanel = new NLeaReqPanel();
+        TerLeaReqPanel terLeaReqPanel = new TerLeaReqPanel();
         VorCRequestPanel vorCRequestPanel = new VorCRequestPanel();
+        LViewReqPanel lViewReqPanel = new LViewReqPanel();
+        LCancReqPanel lCancReqPanel = new LCancReqPanel();
         ViewVacancyPanel viewVacancyPanel = new ViewVacancyPanel();
 
         stuCards.add(viewInvoicesPanel, "viewInvoicesPanel");
         stuCards.add(viewLeasesPanel, "viewLeasePanel");
         stuCards.add(newRequestPanel, "newRequestPanel");
+        stuCards.add(nLeaReqPanel, "nLeaReqPanel");
+        stuCards.add(terLeaReqPanel, "terLeaReqPanel");
         stuCards.add(vorCRequestPanel, "vorCRequestPanel");
+        stuCards.add(lViewReqPanel, "lViewReqPanel");
+        stuCards.add(lCancReqPanel, "lCancReqPanel");
         stuCards.add(viewVacancyPanel, "viewVacancyPanel");
 
         //Under the Parking Option Panel
@@ -135,7 +150,6 @@ public class StudentFrame extends JFrame {
     }
 
 
-
     //HousOptionPanel and subpanels
     public class HousOptionPanel extends JPanel {
         private JLabel hOptLabel;
@@ -222,11 +236,26 @@ public class StudentFrame extends JFrame {
         private JButton vForInvoButton;
         private JButton backButton;
 
-        public ViewInvoicesPanel() {
+        private JTable vInvoTable;
+        private Vector<String> vInvo;
+        private Vector<Vector<String>> data;
+
+        public ViewInvoicesPanel(final String userid) {
             vInvoLabel = new JLabel("View Invoices");
             vCurInvoButton = new JButton("View current invoice");
             vForInvoButton = new JButton("View former invoices");
             backButton = new JButton("Back");
+
+            vInvoTable = new JTable();
+            vInvo = new Vector<String>();
+            data = new Vector<Vector<String>>();
+
+            vInvo.add("StudentID");
+            vInvo.add("HouseRent");
+            vInvo.add("ParkingFee");
+            vInvo.add("MaintenanceFee");
+            vInvo.add("DamageCharges");
+            vInvo.add("Total");
 
             vInvoLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             vCurInvoButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -236,13 +265,87 @@ public class StudentFrame extends JFrame {
             vCurInvoButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    DefaultTableModel model = new DefaultTableModel(data, vInvo);
+                    model.setRowCount(0);
 
+                    try {
+                        SqlConnector viewCur = new SqlConnector();
+
+                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
+
+                        PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
+                        vCQ.setString(1, "%"+userid+"%");
+                        vCQ.executeUpdate();
+
+                        Vector<String> bufString = new Vector<String>();
+
+                        ResultSet rs = vCQ.executeQuery();
+
+                        while (rs.next()) {
+                            bufString.add(rs.getString("studentID").trim());
+                            bufString.add(rs.getString("HouseRent").trim());
+                            bufString.add(rs.getString("parkfee").trim());
+                            bufString.add(rs.getString("MaintainMar15").trim());
+                            bufString.add(rs.getString("DamageChrgs").trim());
+                            bufString.add(rs.getString("Total_due").trim());
+                            bufString.add("\n");
+                            //System.out.println(bufString.elementAt(6));
+
+
+                            data.add(bufString);
+                        }
+
+                        viewCur.getStmt().close();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+
+                    model = new DefaultTableModel(data, vInvo);
+                    vInvoTable.setModel(model);
+                    vInvoTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
+                    vInvoTable.setFillsViewportHeight(true);
                 }
             });
 
             vForInvoButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    try {
+                        SqlConnector viewCur = new SqlConnector();
+
+                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
+
+                        PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
+                        vCQ.setString(1, "%"+userid+"%");
+                        vCQ.executeUpdate();
+
+                        Vector<String> bufString = new Vector<String>();
+
+
+                        ResultSet rs = vCQ.executeQuery();
+
+                        while (rs.next()) {
+                            bufString.add(rs.getString("studentID").trim());
+                            bufString.add(rs.getString("HouseRent").trim());
+                            bufString.add(rs.getString("parkfee").trim());
+                            bufString.add(rs.getString("MaintainMar15").trim());
+                            bufString.add(rs.getString("DamageChrgs").trim());
+                            bufString.add(rs.getString("Total_due").trim());
+                            bufString.add("\n");
+                            //System.out.println(bufString.elementAt(6));
+
+
+                            data.add(bufString);
+                        }
+
+                        viewCur.getStmt().close();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+                    DefaultTableModel model = new DefaultTableModel(data, vInvo);
+                    vInvoTable.setModel(model);
+                    vInvoTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
+                    vInvoTable.setFillsViewportHeight(true);
 
                 }
             });
@@ -255,6 +358,7 @@ public class StudentFrame extends JFrame {
             });
 
             this.add(vInvoLabel);
+            this.add(new JScrollPane(vInvoTable));
             this.add(vCurInvoButton);
             this.add(vForInvoButton);
             this.add(backButton);
@@ -262,6 +366,7 @@ public class StudentFrame extends JFrame {
         }
 
     }
+
 
     public class ViewLeasesPanel extends JPanel {
         private JLabel vLeaseLabel;
@@ -330,14 +435,14 @@ public class StudentFrame extends JFrame {
             nLeaReqButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    stuCardLayout.show(stuCards, "nLeaReqPanel");
                 }
             });
 
             tLeaReqButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    stuCardLayout.show(stuCards, "terLeaReqPanel");
                 }
             });
 
@@ -352,6 +457,110 @@ public class StudentFrame extends JFrame {
             this.add(nReqLabel);
             this.add(nLeaReqButton);
             this.add(tLeaReqButton);
+            this.add(backButton);
+            this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        }
+    }
+
+    public class NLeaReqPanel extends JPanel {
+        private JLabel panelTitle = new JLabel("New Lease Request");
+        private JLabel enterLabel = new JLabel("Enter following details: ");
+        private JLabel perForLeaLabel = new JLabel("Period for leasing");
+        private JTextField perForLea = new JTextField();
+        private JLabel houPrefLabel = new JLabel("Housing Preference");
+        private JTextField houPref = new JTextField();
+        private JLabel entDateLabel = new JLabel("The date you want to enter the room");
+        private JTextField entDate = new JTextField();
+        private JLabel payOptLabel = new JLabel("Payments options, monthly or once semester");
+        private JTextField payOpt = new JTextField();
+        private JButton submitButton = new JButton("Submit");
+        private JButton backButton = new JButton("Back");
+
+        public NLeaReqPanel() {
+            panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+            enterLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            perForLeaLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            perForLea.setAlignmentX(Component.CENTER_ALIGNMENT);
+            houPrefLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            houPref.setAlignmentX(Component.CENTER_ALIGNMENT);
+            entDateLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            entDate.setAlignmentX(Component.CENTER_ALIGNMENT);
+            payOptLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            payOpt.setAlignmentX(Component.CENTER_ALIGNMENT);
+            submitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+            backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+            submitButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
+            backButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    stuCardLayout.show(stuCards, "newRequestPanel");
+                }
+            });
+
+            this.add(panelTitle);
+            this.add(enterLabel);
+            this.add(perForLeaLabel);
+            this.add(perForLea);
+            this.add(houPrefLabel);
+            this.add(houPref);
+            this.add(entDateLabel);
+            this.add(entDate);
+            this.add(payOptLabel);
+            this.add(payOpt);
+            this.add(submitButton);
+            this.add(backButton);
+            this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        }
+    }
+
+    public class TerLeaReqPanel extends JPanel {
+        private JLabel panelTitle = new JLabel("Terminate lease request");
+        private JLabel enterLabel = new JLabel("Enter following details:");
+        private JLabel leavDateLabel = new JLabel("The date you want to leave");
+        private JTextField leavDate = new JTextField();
+        private JLabel terReasLabel = new JLabel("Reason for termination");
+        private JTextField terReas = new JTextField();
+        private JButton submitButton = new JButton("Submit");
+        private JButton backButton = new JButton("Back");
+
+        public TerLeaReqPanel() {
+            panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+            enterLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            leavDateLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            leavDate.setAlignmentX(Component.CENTER_ALIGNMENT);
+            terReasLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            terReas.setAlignmentX(Component.CENTER_ALIGNMENT);
+            submitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+            backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+            submitButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
+            backButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    stuCardLayout.show(stuCards, "newRequestPanel");
+                }
+            });
+
+            this.add(panelTitle);
+            this.add(enterLabel);
+            this.add(leavDateLabel);
+            this.add(leavDate);
+            this.add(terReasLabel);
+            this.add(terReas);
+            this.add(submitButton);
             this.add(backButton);
             this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         }
@@ -377,6 +586,7 @@ public class StudentFrame extends JFrame {
             vReqButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    stuCardLayout.show(stuCards, "lViewReqPanel");
 
                 }
             });
@@ -384,7 +594,7 @@ public class StudentFrame extends JFrame {
             cReqButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    stuCardLayout.show(stuCards, "lCancReqPanel");
                 }
             });
 
@@ -398,6 +608,64 @@ public class StudentFrame extends JFrame {
             this.add(vcReqLabel);
             this.add(vReqButton);
             this.add(cReqButton);
+            this.add(backButton);
+            this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        }
+    }
+
+    public class LViewReqPanel extends JPanel {
+        private JLabel panelTitle = new JLabel("View Request");
+        private JButton backButton = new JButton("Back");
+
+        public LViewReqPanel() {
+            panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+            backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+            backButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    stuCardLayout.show(stuCards, "vorCRequestPanel");
+                }
+            });
+
+            this.add(panelTitle);
+            this.add(backButton);
+            this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+        }
+    }
+
+    public class LCancReqPanel extends JPanel {
+        private JLabel panelTitle = new JLabel("Cancel Request");
+        private JLabel reqNumLabel = new JLabel("Enter the request number to cancle");
+        private JTextField reqNum = new JTextField();
+        private JButton submitButton = new JButton("Submit");
+        private JButton backButton = new JButton("Back");
+
+        public LCancReqPanel() {
+            panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+            reqNumLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+            reqNum.setAlignmentX(Component.CENTER_ALIGNMENT);
+            submitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+            backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+            submitButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
+            backButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    stuCardLayout.show(stuCards, "vorCRequestPanel");
+                }
+            });
+
+            this.add(panelTitle);
+            this.add(reqNumLabel);
+            this.add(reqNum);
+            this.add(submitButton);
             this.add(backButton);
             this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         }
@@ -427,7 +695,6 @@ public class StudentFrame extends JFrame {
         }
 
     }
-
 
 
     //ParkOptionPanel and subpanels
@@ -639,6 +906,7 @@ public class StudentFrame extends JFrame {
         }
     }
 
+    ////Renew or Returen parking spot
     public class ReParkPanel extends JPanel {
         private JLabel panelTitle;
         private JLabel entPIDLabel;
