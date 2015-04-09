@@ -46,7 +46,7 @@ public class StudentFrame extends JFrame {
 
         //Under the Housing Option Panel
         ViewInvoicesPanel viewInvoicesPanel = new ViewInvoicesPanel(userid);
-        ViewLeasesPanel viewLeasesPanel = new ViewLeasesPanel();
+        ViewLeasesPanel viewLeasesPanel = new ViewLeasesPanel(userid);
         NewRequestPanel newRequestPanel = new NewRequestPanel();
         NLeaReqPanel nLeaReqPanel = new NLeaReqPanel();
         TerLeaReqPanel terLeaReqPanel = new TerLeaReqPanel();
@@ -274,17 +274,17 @@ public class StudentFrame extends JFrame {
                     try {
                         SqlConnector viewCur = new SqlConnector();
 
-                        // String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
-
-                        String sql = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03";
-
-                        //PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
-                        //vCQ.setString(1, "%"+userid+"%");
-                        // vCQ.executeUpdate();
+                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.studentID=?";
 
 
-                        //ResultSet rs = vCQ.executeQuery();
-                        ResultSet rs = viewCur.getStmt().executeQuery(sql);
+
+                        PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
+                        vCQ.setString(1, userid);
+                        //vCQ.executeUpdate();
+
+
+                        ResultSet rs = vCQ.executeQuery();
+                        //ResultSet rs = viewCur.getStmt().executeQuery(sql);
 
                         while (rs.next()) {
 
@@ -295,16 +295,37 @@ public class StudentFrame extends JFrame {
                             bufString.add(rs.getString("HouseRent"));
 
                             //real
-                            bufString.add(rs.getString("parkfee"));
+                            String parkfee = rs.getString("parkfee");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+                            } else {
+                                bufString.add(parkfee);
+                            }
 
                             //real
-                            bufString.add(rs.getString("MaintainMar15"));
+                            String maitfee = rs.getString("MaintainMar15");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+
+                            } else {
+                                bufString.add(maitfee);
+                            }
 
                             //real
-                            bufString.add(rs.getString("DamageChrgs"));
+                            String dChrg = rs.getString("DamageChrgs");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+                            } else {
+                                bufString.add(dChrg);
+                            }
 
                             //real
-                            bufString.add(bufString.elementAt(0)+bufString+);
+                            int hRent = Integer.parseInt(bufString.elementAt(1));
+                            int pFee = Integer.parseInt(bufString.elementAt(2));
+                            int mFee = Integer.parseInt(bufString.elementAt(3));
+                            int dChr = Integer.parseInt(bufString.elementAt(4));
+
+                            bufString.add(String.valueOf(hRent+pFee+mFee+dChr));
 
                             bufString.add("\n");
                             //System.out.println(bufString.elementAt(6));
@@ -326,31 +347,67 @@ public class StudentFrame extends JFrame {
             vForInvoButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    DefaultTableModel model = new DefaultTableModel(data, vInvo);
+                    model.setRowCount(0);
+
                     try {
                         SqlConnector viewCur = new SqlConnector();
 
-                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
+                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M115.MaintainJan15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M115.MaintainJan15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Jan2015 M115 ON PF.StudentID = M115.StIDMaintainJan15 LEFT OUTER JOIN TerminateReq TR ON M115.StIDMaintainJan15= TR.ID AND TR.InvoiceMnth=01 WHERE R.studentID=?";
+
+
 
                         PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
-                        vCQ.setString(1, "%" + userid + "%");
-                        vCQ.executeUpdate();
-
-                        Vector<String> bufString = new Vector<String>();
+                        vCQ.setString(1, userid);
+                        //vCQ.executeUpdate();
 
 
                         ResultSet rs = vCQ.executeQuery();
+                        //ResultSet rs = viewCur.getStmt().executeQuery(sql);
 
                         while (rs.next()) {
-                            bufString.add(rs.getString("studentID").trim());
-                            bufString.add(rs.getString("HouseRent").trim());
-                            bufString.add(rs.getString("parkfee").trim());
-                            bufString.add(rs.getString("MaintainMar15").trim());
-                            bufString.add(rs.getString("DamageChrgs").trim());
-                            bufString.add(rs.getString("Total_due").trim());
+
+                            Vector<String> bufString = new Vector<String>();
+
+                            bufString.add(rs.getString("studentID"));
+
+                            bufString.add(rs.getString("HouseRent"));
+
+                            //real
+                            String parkfee = rs.getString("parkfee");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+                            } else {
+                                bufString.add(parkfee);
+                            }
+
+                            //real
+                            String maitfee = rs.getString("MaintainJan15");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+
+                            } else {
+                                bufString.add(maitfee);
+                            }
+
+                            //real
+                            String dChrg = rs.getString("DamageChrgs");
+                            if (rs.wasNull()) {
+                                bufString.add("0");
+                            } else {
+                                bufString.add(dChrg);
+                            }
+
+                            //real
+                            int hRent = Integer.parseInt(bufString.elementAt(1));
+                            int pFee = Integer.parseInt(bufString.elementAt(2));
+                            int mFee = Integer.parseInt(bufString.elementAt(3));
+                            int dChr = Integer.parseInt(bufString.elementAt(4));
+
+                            bufString.add(String.valueOf(hRent+pFee+mFee+dChr));
+
                             bufString.add("\n");
                             //System.out.println(bufString.elementAt(6));
-
-
                             data.add(bufString);
                         }
 
@@ -358,11 +415,11 @@ public class StudentFrame extends JFrame {
                     } catch (SQLException e1) {
                         e1.printStackTrace();
                     }
-                    DefaultTableModel model = new DefaultTableModel(data, vInvo);
+
+                    model = new DefaultTableModel(data, vInvo);
                     vInvoTable.setModel(model);
                     vInvoTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
                     vInvoTable.setFillsViewportHeight(true);
-
                 }
             });
 
@@ -390,12 +447,11 @@ public class StudentFrame extends JFrame {
         private JButton vForLButton;
         private JButton backButton;
 
-
         private JTable vleaTable;
         private Vector<String> vlea;
         private Vector<Vector<String>> data;
 
-        public ViewLeasesPanel() {
+        public ViewLeasesPanel(final String userid) {
             vLeaseLabel = new JLabel("View Lease");
             vCurLButton = new JButton("View current lease");
             vForLButton = new JButton("View former lease");
@@ -405,9 +461,13 @@ public class StudentFrame extends JFrame {
             vlea = new Vector<String>();
             data = new Vector<Vector<String>>();
 
-            vlea.add("leaseNumber");
-            vlea.add("");
-
+            vlea.add("LeaseID");
+            vlea.add("HouseID");
+            vlea.add("ID");
+            vlea.add("Lease_start");
+            vlea.add("Lease_date");
+            vlea.add("Lease_Status");
+            vlea.add("Payment_Opt");
 
             vLeaseLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             vCurLButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -417,7 +477,60 @@ public class StudentFrame extends JFrame {
             vCurLButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    stuCardLayout.show(stuCards, "");
+                    DefaultTableModel model = new DefaultTableModel(data, vlea);
+                    model.setRowCount(0);
+
+                    try {
+                        SqlConnector viewLease = new SqlConnector();
+
+                        String vLeaQuery = "SELECT * FROM LEASE WHERE ID=?";
+
+
+
+                        PreparedStatement vCQ = viewLease.getConn().prepareStatement(vLeaQuery);
+                        vCQ.setString(1, userid);
+                        //vCQ.executeUpdate();
+
+
+                        ResultSet rs = vCQ.executeQuery();
+                        //ResultSet rs = viewCur.getStmt().executeQuery(sql);
+
+                        while (rs.next()) {
+
+                            Vector<String> bufString = new Vector<String>();
+
+                            bufString.add(rs.getString("LeaseID"));
+
+                            bufString.add(rs.getString("HouseID"));
+
+                            bufString.add(rs.getString("ID"));
+
+                            String lease_start = new SimpleDateFormat("MM/dd/yyyy").format(rs.getTimestamp("Lease_start"));
+
+                            bufString.add(lease_start);
+
+                            String lease_date = new SimpleDateFormat("MM/dd/yyyy").format(rs.getTimestamp("Lease_date"));
+
+                            bufString.add(lease_date);
+
+                            bufString.add(rs.getString("Lease_Status"));
+
+                            bufString.add(rs.getString("Payment_Opt"));
+
+                            bufString.add("\n");
+                            //System.out.println(bufString.elementAt(6));
+                            data.add(bufString);
+                        }
+
+                        viewLease.getStmt().close();
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+
+                    model = new DefaultTableModel(data, vlea);
+                    vleaTable.setModel(model);
+                    vleaTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
+                    vleaTable.setFillsViewportHeight(true);
                 }
             });
 
