@@ -6,6 +6,9 @@ import java.awt.event.ActionListener;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Enumeration;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -271,27 +274,40 @@ public class StudentFrame extends JFrame {
                     try {
                         SqlConnector viewCur = new SqlConnector();
 
-                        String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
+                        // String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
 
-                        PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
-                        vCQ.setString(1, "%"+userid+"%");
-                        vCQ.executeUpdate();
+                        String sql = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03";
 
-                        Vector<String> bufString = new Vector<String>();
+                        //PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
+                        //vCQ.setString(1, "%"+userid+"%");
+                        // vCQ.executeUpdate();
 
-                        ResultSet rs = vCQ.executeQuery();
+
+                        //ResultSet rs = vCQ.executeQuery();
+                        ResultSet rs = viewCur.getStmt().executeQuery(sql);
 
                         while (rs.next()) {
-                            bufString.add(rs.getString("studentID").trim());
-                            bufString.add(rs.getString("HouseRent").trim());
-                            bufString.add(rs.getString("parkfee").trim());
-                            bufString.add(rs.getString("MaintainMar15").trim());
-                            bufString.add(rs.getString("DamageChrgs").trim());
-                            bufString.add(rs.getString("Total_due").trim());
+
+                            Vector<String> bufString = new Vector<String>();
+
+                            bufString.add(rs.getString("studentID"));
+
+                            bufString.add(rs.getString("HouseRent"));
+
+                            //real
+                            bufString.add(rs.getString("parkfee"));
+
+                            //real
+                            bufString.add(rs.getString("MaintainMar15"));
+
+                            //real
+                            bufString.add(rs.getString("DamageChrgs"));
+
+                            //real
+                            bufString.add(bufString.elementAt(0)+bufString+);
+
                             bufString.add("\n");
                             //System.out.println(bufString.elementAt(6));
-
-
                             data.add(bufString);
                         }
 
@@ -316,7 +332,7 @@ public class StudentFrame extends JFrame {
                         String vCurQuery = "select R.studentID, R.HouseRent, PF.parkfee, M315.MaintainMar15, TR.DamageChrgs, (R.HouseRent+PF.parkfee+M315.MaintainMar15+TR.DamageChrgs) AS Total_due FROM ResidentialRent R LEFT OUTER JOIN ParkingFee PF ON R.studentID=PF.StudentID LEFT OUTER JOIN MaintainChrg_Mar2015 M315 ON PF.StudentID = M315.StIDMaintainMar15 LEFT OUTER JOIN TerminateReq TR ON M315.StIDMaintainMar15= TR.ID AND TR.InvoiceMnth=03 WHERE R.StudentID like ?";
 
                         PreparedStatement vCQ = viewCur.getConn().prepareStatement(vCurQuery);
-                        vCQ.setString(1, "%"+userid+"%");
+                        vCQ.setString(1, "%" + userid + "%");
                         vCQ.executeUpdate();
 
                         Vector<String> bufString = new Vector<String>();
@@ -374,11 +390,24 @@ public class StudentFrame extends JFrame {
         private JButton vForLButton;
         private JButton backButton;
 
+
+        private JTable vleaTable;
+        private Vector<String> vlea;
+        private Vector<Vector<String>> data;
+
         public ViewLeasesPanel() {
             vLeaseLabel = new JLabel("View Lease");
             vCurLButton = new JButton("View current lease");
             vForLButton = new JButton("View former lease");
             backButton = new JButton("Back");
+
+            vleaTable = new JTable();
+            vlea = new Vector<String>();
+            data = new Vector<Vector<String>>();
+
+            vlea.add("leaseNumber");
+            vlea.add("");
+
 
             vLeaseLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             vCurLButton.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -407,6 +436,7 @@ public class StudentFrame extends JFrame {
             });
 
             this.add(vLeaseLabel);
+            this.add(vleaTable);
             this.add(vCurLButton);
             this.add(vForLButton);
             this.add(backButton);
@@ -468,7 +498,10 @@ public class StudentFrame extends JFrame {
         private JLabel perForLeaLabel = new JLabel("Period for leasing");
         private JTextField perForLea = new JTextField();
         private JLabel houPrefLabel = new JLabel("Housing Preference");
-        private JTextField houPref = new JTextField();
+        private JTextField houOpt1 = new JTextField("Preference 1");
+        private JTextField houOpt2 = new JTextField("Preference 2");
+        private JTextField houOpt3 = new JTextField("Preference 3");
+
         private JLabel entDateLabel = new JLabel("The date you want to enter the room");
         private JTextField entDate = new JTextField();
         private JLabel payOptLabel = new JLabel("Payments options, monthly or once semester");
@@ -482,7 +515,9 @@ public class StudentFrame extends JFrame {
             perForLeaLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             perForLea.setAlignmentX(Component.CENTER_ALIGNMENT);
             houPrefLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-            houPref.setAlignmentX(Component.CENTER_ALIGNMENT);
+            houOpt1.setAlignmentX(Component.CENTER_ALIGNMENT);
+            houOpt2.setAlignmentX(Component.CENTER_ALIGNMENT);
+            houOpt3.setAlignmentX(Component.CENTER_ALIGNMENT);
             entDateLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
             entDate.setAlignmentX(Component.CENTER_ALIGNMENT);
             payOptLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -509,7 +544,9 @@ public class StudentFrame extends JFrame {
             this.add(perForLeaLabel);
             this.add(perForLea);
             this.add(houPrefLabel);
-            this.add(houPref);
+            this.add(houOpt1);
+            this.add(houOpt2);
+            this.add(houOpt3);
             this.add(entDateLabel);
             this.add(entDate);
             this.add(payOptLabel);
@@ -800,39 +837,51 @@ public class StudentFrame extends JFrame {
     public class ReqNewPanel extends JPanel {
         private JLabel panelTitle;
         private JLabel vecTypeLabel;
-        private JTextField vecType;
-        private JLabel handiLabel;
-        private JTextField handicapped;
+        private JRadioButton bike = new JRadioButton("Bike");
+        private JRadioButton handicapped = new JRadioButton("Handicapped");
+        private JRadioButton compactCar = new JRadioButton("CompactCar");
+        private JRadioButton lrgCar = new JRadioButton("LargeCar");
+        private ButtonGroup vecType = new ButtonGroup();
         private JLabel nearSpotLabel;
-        private JTextField nearbySpot;
+        private ButtonGroup nearbySpot = new ButtonGroup();
+        private JRadioButton yesButton = new JRadioButton("yes");
+        private JRadioButton noButton = new JRadioButton("no");
         private JButton submitButton;
         private JButton backButton;
 
         public ReqNewPanel() {
-            panelTitle = new JLabel("Request new parking spot/n Enter following details");
+            panelTitle = new JLabel("Request new parking spot, enter following details");
             vecTypeLabel = new JLabel("Vehicle type");
-            vecType = new JTextField("Enter the vehicle type here");
-            handiLabel = new JLabel("Handicapped?");
-            handicapped = new JTextField();
             nearSpotLabel = new JLabel("Nearby Spot?");
-            nearbySpot = new JTextField("");
             submitButton = new JButton("Submit");
             backButton = new JButton("Back");
 
             panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
             vecTypeLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-            vecType.setAlignmentX(Component.CENTER_ALIGNMENT);
-            handiLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-            handicapped.setAlignmentX(Component.CENTER_ALIGNMENT);
             nearSpotLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-            nearbySpot.setAlignmentX(Component.CENTER_ALIGNMENT);
             submitButton.setAlignmentX(Component.CENTER_ALIGNMENT);
             backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
             submitButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    String type = "";
+                    String nearby = "";
+                    for (Enumeration<AbstractButton> buttons = vecType.getElements(); buttons.hasMoreElements(); ) {
+                        AbstractButton button = buttons.nextElement();
+                        if (button.isSelected()) {
+                            type = button.getText();
+                            System.out.println("The type selected is: " + type);
+                        }
+                    }
 
+                    for (Enumeration<AbstractButton> buttons = nearbySpot.getElements(); buttons.hasMoreElements(); ) {
+                        AbstractButton button = buttons.nextElement();
+                        if (button.isSelected()) {
+                            type = button.getText();
+                            System.out.println("The nearbySpot selected is: " + type);
+                        }
+                    }
                 }
             });
 
@@ -843,13 +892,23 @@ public class StudentFrame extends JFrame {
                 }
             });
 
+            vecType.add(bike);
+            vecType.add(compactCar);
+            vecType.add(lrgCar);
+            vecType.add(handicapped);
+            bike.setSelected(true);
+            nearbySpot.add(yesButton);
+            nearbySpot.add(noButton);
+            yesButton.setSelected(true);
             this.add(panelTitle);
             this.add(vecTypeLabel);
-            this.add(vecType);
-            this.add(handiLabel);
+            this.add(bike);
+            this.add(compactCar);
+            this.add(lrgCar);
             this.add(handicapped);
             this.add(nearSpotLabel);
-            this.add(nearbySpot);
+            this.add(yesButton);
+            this.add(noButton);
             this.add(submitButton);
             this.add(backButton);
             this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -857,15 +916,70 @@ public class StudentFrame extends JFrame {
     }
 
     public class VParkInfoPanel extends JPanel {
-        private JLabel panelTitle;
-        private JButton backButton;
+        private JLabel panelTitle = new JLabel("View parking lot information");
+        private JButton viewButton = new JButton("View");
+        private JButton backButton = new JButton("Back");
+
+        private JTable parkInfoTable = new JTable();
+        private Vector<String> parkInfo = new Vector<String>();
+        private Vector<Vector<String>> data = new Vector<Vector<String>>();
+
 
         public VParkInfoPanel() {
-            panelTitle = new JLabel("View parking lot information");
-            backButton = new JButton("Back");
+            parkInfo.add("Spot#");
+            parkInfo.add("Lot#");
+            parkInfo.add("MonthlyFees");
+            parkInfo.add("Type");
+
 
             panelTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
+            viewButton.setAlignmentX(Component.CENTER_ALIGNMENT);
             backButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+
+            viewButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                    DefaultTableModel model = new DefaultTableModel(data, parkInfo);
+                    model.setRowCount(0);
+
+                    try {
+                        SqlConnector vparinfo = new SqlConnector();
+
+                        String vParkSql = "SELECT SpotNo, LotNo, MonthlyFees, Type FROM ParkingOpt WHERE Occupant is NULL ";
+
+                        ResultSet rs = vparinfo.getStmt().executeQuery(vParkSql);
+
+                        float mFee = 0;
+
+                        while (rs.next()) {
+                            Vector<String> bufString = new Vector<String>();
+
+                            bufString.add(rs.getString("SpotNo"));
+
+                            bufString.add(rs.getString("LotNo"));
+
+                            mFee = rs.getFloat("MonthlyFees");
+                            bufString.add(Float.toString(mFee));
+
+                            bufString.add(rs.getString("Type"));
+
+                            data.add(bufString);
+                        }
+
+                        vparinfo.getStmt().close();
+
+                    } catch (SQLException e1) {
+                        e1.printStackTrace();
+                    }
+
+                    model = new DefaultTableModel(data, parkInfo);
+                    parkInfoTable.setModel(model);
+                    parkInfoTable.setPreferredScrollableViewportSize(new Dimension(500, 70));
+                    parkInfoTable.setFillsViewportHeight(true);
+                }
+            });
+
 
             backButton.addActionListener(new ActionListener() {
                 @Override
@@ -875,6 +989,8 @@ public class StudentFrame extends JFrame {
             });
 
             this.add(panelTitle);
+            this.add(new JScrollPane(parkInfoTable));
+            this.add(viewButton);
             this.add(backButton);
             this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 

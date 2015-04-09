@@ -32,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SqlConnector.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SqlConnector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.40966386">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#StartFrame#0;class#StartFrame#0" expanded="false" />
@@ -71,55 +71,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentFrame.java" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4159664">
-              <caret line="990" column="23" selection-start-line="990" selection-start-column="23" selection-end-line="990" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="306" column="75" selection-start-line="306" selection-start-column="75" selection-end-line="306" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#5134#5373#0" expanded="true" />
-                <element signature="e#5372#5373#0" expanded="true" />
+                <element signature="e#5222#5461#0" expanded="true" />
+                <element signature="e#5460#5461#0" expanded="true" />
                 <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#10083#12395#0" expanded="true" />
-                <element signature="e#11148#11156#0" expanded="true" />
-                <element signature="e#12394#12395#0" expanded="true" />
-                <element signature="e#12444#14650#0" expanded="true" />
-                <element signature="e#13384#13392#0" expanded="true" />
-                <element signature="e#14649#14650#0" expanded="true" />
-                <element signature="e#14695#14905#0" expanded="true" />
-                <element signature="e#14904#14905#0" expanded="true" />
-                <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#17647#17854#0" expanded="true" />
-                <element signature="e#17853#17854#0" expanded="true" />
-                <element signature="e#17902#18111#0" expanded="true" />
-                <element signature="e#18110#18111#0" expanded="true" />
-                <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#20516#20726#0" expanded="true" />
-                <element signature="e#20725#20726#0" expanded="true" />
-                <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#22606#22816#0" expanded="true" />
-                <element signature="e#22815#22816#0" expanded="true" />
+                <element signature="e#10171#13132#0" expanded="true" />
+                <element signature="e#11879#11887#0" expanded="true" />
+                <element signature="e#13131#13132#0" expanded="true" />
+                <element signature="e#13181#15391#0" expanded="true" />
+                <element signature="e#14125#14133#0" expanded="true" />
+                <element signature="e#15390#15391#0" expanded="true" />
+                <element signature="e#15436#15646#0" expanded="true" />
+                <element signature="e#15645#15646#0" expanded="true" />
+                <element signature="e#17005#17200#0" expanded="true" />
+                <element signature="e#17199#17200#0" expanded="true" />
+                <element signature="e#17246#17441#0" expanded="true" />
+                <element signature="e#17440#17441#0" expanded="true" />
+                <element signature="e#17486#17696#0" expanded="true" />
+                <element signature="e#17695#17696#0" expanded="true" />
+                <element signature="e#18733#18940#0" expanded="true" />
+                <element signature="e#18939#18940#0" expanded="true" />
+                <element signature="e#18988#19197#0" expanded="true" />
+                <element signature="e#19196#19197#0" expanded="true" />
+                <element signature="e#21881#22091#0" expanded="true" />
+                <element signature="e#22090#22091#0" expanded="true" />
+                <element signature="e#24033#24243#0" expanded="true" />
+                <element signature="e#24242#24243#0" expanded="true" />
                 <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#23932#24141#0" expanded="true" />
-                <element signature="e#24140#24141#0" expanded="true" />
-                <element signature="e#24186#24394#0" expanded="true" />
-                <element signature="e#24393#24394#0" expanded="true" />
-                <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#25251#25462#0" expanded="true" />
-                <element signature="e#25461#25462#0" expanded="true" />
-                <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="e#26587#26798#0" expanded="true" />
-                <element signature="e#26797#26798#0" expanded="true" />
+                <element signature="e#25359#25568#0" expanded="true" />
+                <element signature="e#25567#25568#0" expanded="true" />
+                <element signature="e#25613#25821#0" expanded="true" />
+                <element signature="e#25820#25821#0" expanded="true" />
+                <element signature="e#26678#26889#0" expanded="true" />
+                <element signature="e#26888#26889#0" expanded="true" />
+                <element signature="e#28014#28225#0" expanded="true" />
+                <element signature="e#28224#28225#0" expanded="true" />
                 <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-                <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+                <element signature="e#34528#35599#0" expanded="true" />
+                <element signature="e#35598#35599#0" expanded="true" />
+                <element signature="e#35644#35854#0" expanded="true" />
+                <element signature="e#35853#35854#0" expanded="true" />
+                <element signature="e#36955#36963#0" expanded="true" />
+                <element signature="e#37023#37039#0" expanded="true" />
+                <element signature="e#37465#39054#0" expanded="true" />
+                <element signature="e#38158#38166#0" expanded="true" />
+                <element signature="e#39053#39054#0" expanded="true" />
+                <element signature="e#39100#39310#0" expanded="true" />
+                <element signature="e#39309#39310#0" expanded="true" />
                 <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -129,8 +135,9 @@
                 <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
                 <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-                <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-                <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+                <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+                <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+                <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
               </folding>
             </state>
           </provider>
@@ -164,8 +171,8 @@
         <option value="$PROJECT_DIR$/src/LoginFrame.java" />
         <option value="$PROJECT_DIR$/backupFiles/LoginFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/SqlConnector.java" />
         <option value="$PROJECT_DIR$/src/StartFrame.java" />
+        <option value="$PROJECT_DIR$/src/SqlConnector.java" />
         <option value="$PROJECT_DIR$/src/StudentFrame.java" />
       </list>
     </option>
@@ -181,9 +188,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="416" />
-    <option name="y" value="23" />
-    <option name="width" value="1479" />
+    <option name="x" value="18" />
+    <option name="y" value="47" />
+    <option name="width" value="1356" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -308,7 +315,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DB_connectors/oracle/ojdbc6.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DB_connectors/oracle/ojdbc6.jar" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -500,6 +507,9 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Unknown" factoryName="Unknown">
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
@@ -531,12 +541,12 @@
       <workItem from="1428269259903" duration="15271000" />
       <workItem from="1428361045159" duration="3276000" />
       <workItem from="1428393647161" duration="1010000" />
-      <workItem from="1428397148564" duration="19758000" />
+      <workItem from="1428397148564" duration="35298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100815000" />
+    <option name="totallyTimeSpent" value="116355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,7 +558,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="416" y="23" width="1479" height="877" extended-state="0" />
+    <frame x="18" y="47" width="1356" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -563,11 +573,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938075" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.037542664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19415449" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27321157" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21232876" sideWeight="0.4920635" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19415449" sideWeight="0.50793654" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39789197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -594,7 +604,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="15" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -642,48 +652,54 @@
           <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -693,8 +709,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -738,48 +755,54 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -789,8 +812,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -834,48 +858,54 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -885,8 +915,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -897,48 +928,54 @@
           <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -948,8 +985,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -1016,48 +1054,54 @@
           <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -1067,8 +1111,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -1126,48 +1171,54 @@
           <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -1177,8 +1228,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -1229,48 +1281,54 @@
           <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -1280,8 +1338,9 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
         </state>
       </provider>
@@ -1420,10 +1479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+    <entry file="jar://$USER_HOME$/Downloads/DB_connectors/oracle/ojdbc6.jar!/oracle/jdbc/driver/T4C8Oall.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.3503326">
+          <caret line="378" column="0" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1439,7 +1498,7 @@
     <entry file="file://$PROJECT_DIR$/src/StartFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
+          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#StartFrame#0;class#StartFrame#0" expanded="false" />
@@ -1455,52 +1514,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudentFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4159664">
-          <caret line="990" column="23" selection-start-line="990" selection-start-column="23" selection-end-line="990" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="306" column="75" selection-start-line="306" selection-start-column="75" selection-end-line="306" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#StudentFrame#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#StuMainPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#5134#5373#0" expanded="true" />
-            <element signature="e#5372#5373#0" expanded="true" />
+            <element signature="e#5222#5461#0" expanded="true" />
+            <element signature="e#5460#5461#0" expanded="true" />
             <element signature="class#HousOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="method#ViewInvoicesPanel#0;class#ViewInvoicesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#10083#12395#0" expanded="true" />
-            <element signature="e#11148#11156#0" expanded="true" />
-            <element signature="e#12394#12395#0" expanded="true" />
-            <element signature="e#12444#14650#0" expanded="true" />
-            <element signature="e#13384#13392#0" expanded="true" />
-            <element signature="e#14649#14650#0" expanded="true" />
-            <element signature="e#14695#14905#0" expanded="true" />
-            <element signature="e#14904#14905#0" expanded="true" />
-            <element signature="class#ViewLeasesPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#NewRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#17647#17854#0" expanded="true" />
-            <element signature="e#17853#17854#0" expanded="true" />
-            <element signature="e#17902#18111#0" expanded="true" />
-            <element signature="e#18110#18111#0" expanded="true" />
-            <element signature="class#NLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#20516#20726#0" expanded="true" />
-            <element signature="e#20725#20726#0" expanded="true" />
-            <element signature="class#TerLeaReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#22606#22816#0" expanded="true" />
-            <element signature="e#22815#22816#0" expanded="true" />
+            <element signature="e#10171#13132#0" expanded="true" />
+            <element signature="e#11879#11887#0" expanded="true" />
+            <element signature="e#13131#13132#0" expanded="true" />
+            <element signature="e#13181#15391#0" expanded="true" />
+            <element signature="e#14125#14133#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+            <element signature="e#15436#15646#0" expanded="true" />
+            <element signature="e#15645#15646#0" expanded="true" />
+            <element signature="e#17005#17200#0" expanded="true" />
+            <element signature="e#17199#17200#0" expanded="true" />
+            <element signature="e#17246#17441#0" expanded="true" />
+            <element signature="e#17440#17441#0" expanded="true" />
+            <element signature="e#17486#17696#0" expanded="true" />
+            <element signature="e#17695#17696#0" expanded="true" />
+            <element signature="e#18733#18940#0" expanded="true" />
+            <element signature="e#18939#18940#0" expanded="true" />
+            <element signature="e#18988#19197#0" expanded="true" />
+            <element signature="e#19196#19197#0" expanded="true" />
+            <element signature="e#21881#22091#0" expanded="true" />
+            <element signature="e#22090#22091#0" expanded="true" />
+            <element signature="e#24033#24243#0" expanded="true" />
+            <element signature="e#24242#24243#0" expanded="true" />
             <element signature="class#VorCRequestPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#23932#24141#0" expanded="true" />
-            <element signature="e#24140#24141#0" expanded="true" />
-            <element signature="e#24186#24394#0" expanded="true" />
-            <element signature="e#24393#24394#0" expanded="true" />
-            <element signature="class#LViewReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#25251#25462#0" expanded="true" />
-            <element signature="e#25461#25462#0" expanded="true" />
-            <element signature="class#LCancReqPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="e#26587#26798#0" expanded="true" />
-            <element signature="e#26797#26798#0" expanded="true" />
+            <element signature="e#25359#25568#0" expanded="true" />
+            <element signature="e#25567#25568#0" expanded="true" />
+            <element signature="e#25613#25821#0" expanded="true" />
+            <element signature="e#25820#25821#0" expanded="true" />
+            <element signature="e#26678#26889#0" expanded="true" />
+            <element signature="e#26888#26889#0" expanded="true" />
+            <element signature="e#28014#28225#0" expanded="true" />
+            <element signature="e#28224#28225#0" expanded="true" />
             <element signature="class#ViewVacancyPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ParkOptionPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#ReqNewPanel#0;class#StudentFrame#0" expanded="false" />
-            <element signature="class#VParkInfoPanel#0;class#StudentFrame#0" expanded="false" />
+            <element signature="e#34528#35599#0" expanded="true" />
+            <element signature="e#35598#35599#0" expanded="true" />
+            <element signature="e#35644#35854#0" expanded="true" />
+            <element signature="e#35853#35854#0" expanded="true" />
+            <element signature="e#36955#36963#0" expanded="true" />
+            <element signature="e#37023#37039#0" expanded="true" />
+            <element signature="e#37465#39054#0" expanded="true" />
+            <element signature="e#38158#38166#0" expanded="true" />
+            <element signature="e#39053#39054#0" expanded="true" />
+            <element signature="e#39100#39310#0" expanded="true" />
+            <element signature="e#39309#39310#0" expanded="true" />
             <element signature="class#VCurParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#ReParkPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VReqPanel#0;class#StudentFrame#0" expanded="false" />
@@ -1510,9 +1575,18 @@
             <element signature="class#ProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#VProfPanel#0;class#StudentFrame#0" expanded="false" />
             <element signature="class#UProfPanel#0;class#StudentFrame#0" expanded="false" />
-            <marker date="1428476621000" expanded="true" signature="10456:10884" placeholder="select R.stu..ResidentialRent..." />
-            <marker date="1428476621000" expanded="true" signature="12692:13120" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="11017:11420" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="13429:13857" placeholder="select R.stu..ResidentialRent..." />
+            <marker date="1428540304000" expanded="true" signature="37842:37920" placeholder="SELECT SpotN..ParkingOpt..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SqlConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40966386">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
